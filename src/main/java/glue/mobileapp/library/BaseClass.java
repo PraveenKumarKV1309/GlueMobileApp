@@ -59,7 +59,7 @@ public class BaseClass
 	//@AfterMethod
 	//@AfterSuite
 //	@org.junit.AfterClass
-	//@AfterSuite
+	@AfterSuite
 	public void tearDown()
 	{
 	driver.quit();	
