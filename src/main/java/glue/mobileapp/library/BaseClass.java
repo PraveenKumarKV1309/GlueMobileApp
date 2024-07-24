@@ -62,6 +62,7 @@ public class BaseClass
 	@AfterSuite
 	public void tearDown()
 	{
+	//This line will quit the execution and close the app
 	driver.quit();	
 	}
 	
