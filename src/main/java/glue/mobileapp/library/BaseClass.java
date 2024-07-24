@@ -30,7 +30,6 @@ public class BaseClass
 	if(GenericLibrary.getConfigValue(sConfigPath, "deviceName")==GenericLibrary.getConfigValue(sConfigPath, "emulatorName"))
 	{
 		capabilities.setCapability("deviceName", GenericLibrary.getConfigValue(sConfigPath, "deviceName"));
-		System.out.println("check if entry");
 	}
 	else
 	{
