@@ -5,6 +5,7 @@
     <classes>
       <class name="glue.mobileapp.testcases.LoginTest">
         <methods>
+          <include name="tearDown"/>
           <include name="runAppium"/>
           <include name="launchApp"/>
         </methods>
