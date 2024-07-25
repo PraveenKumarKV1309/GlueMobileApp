@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MobileAutomationSuite" parallel="false">
+	<listeners>
+        <listener class-name="glue.mobileapp.library.SuiteListener"/>
+    </listeners>
+   <test name="MobileTests">
+	    <parameter name="automationName" value="Appium" />
+        <parameter name="platformName" value="Android" />
+         <parameter name="deviceType" value="real" />  <!--real or emulator/simulator-->
+          <parameter name="deviceName" value="Redmi" /> <!--real or emulator/simulator deviceName-->
+           <parameter name="platformVersion" value="13.0" />
+            <parameter name="appPackage" value="com.glue" />
+             <parameter name="appActivity" value="com.glue.MainActivity" />
+              <parameter name="bundleId" value="com.glue" />
+               <parameter name="AppiumServerURL" value="http:127.0.0.1:4723/wd/hub" />
+                <parameter name="emulatorName" value="PraveenEmulator" />       
+        <classes>
+      <class name="glue.mobileapp.testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+     <!--<test name="FirefoxTest" parallel="tests">
+        <parameter name="browser" value="firefox" />
+        <classes>
+      <class name="glue.mobileapp.library.BaseClass"/>
+      <class name="glue.mobileapp.testcases.LoginTest"/>
+    </classes>
+  </test>  Test -->
+</suite> <!-- Suite -->
+
