@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-25T13:30:18 IST" name="Default suite" finished-at="2024-07-25T13:30:18 IST" duration-ms="83">
+  <suite started-at="2024-07-25T20:04:25 IST" name="Default suite" finished-at="2024-07-25T20:04:34 IST" duration-ms="9042">
     <groups>
     </groups>
-    <test started-at="2024-07-25T13:30:18 IST" name="Default test" finished-at="2024-07-25T13:30:18 IST" duration-ms="83">
+    <test started-at="2024-07-25T20:04:25 IST" name="Default test" finished-at="2024-07-25T20:04:34 IST" duration-ms="9042">
       <class name="glue.mobileapp.testcases.LoginTest">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:glue.mobileapp.testcases.LoginTest@2e8c1c9b]" started-at="2024-07-25T13:30:07 IST" name="launchApp" finished-at="2024-07-25T13:30:18 IST" duration-ms="10857" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:glue.mobileapp.testcases.LoginTest@2e8c1c9b]" started-at="2024-07-25T20:04:18 IST" name="launchApp" finished-at="2024-07-25T20:04:25 IST" duration-ms="6657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="runAppium()[pri:0, instance:glue.mobileapp.testcases.LoginTest@2e8c1c9b]" started-at="2024-07-25T13:30:18 IST" name="runAppium" finished-at="2024-07-25T13:30:18 IST" duration-ms="40" status="PASS">
+        <test-method signature="runAppium()[pri:0, instance:glue.mobileapp.testcases.LoginTest@2e8c1c9b]" started-at="2024-07-25T20:04:25 IST" name="runAppium" finished-at="2024-07-25T20:04:34 IST" duration-ms="9018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runAppium -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:glue.mobileapp.testcases.LoginTest@2e8c1c9b]" started-at="2024-07-25T13:30:19 IST" name="tearDown" finished-at="2024-07-25T13:30:19 IST" duration-ms="743" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:glue.mobileapp.testcases.LoginTest@2e8c1c9b]" started-at="2024-07-25T20:04:34 IST" name="tearDown" finished-at="2024-07-25T20:04:35 IST" duration-ms="828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

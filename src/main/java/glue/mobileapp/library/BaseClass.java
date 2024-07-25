@@ -40,12 +40,12 @@ public class BaseClass {
 	
 	//capabilities.setCapability(MobileCapabilityType.APP, sDirPath+"\\SiteAssist_v1.0.1.apk");
 	//capabilities.setCapability(MobileCapabilityType.APP, sDirPath+"/app/MoveMint.apk");
-	capabilities.setCapability("ignoreHiddenApiPolicyError",true );
+	//capabilities.setCapability("ignoreHiddenApiPolicyError",true );
 	
 	capabilities.setCapability("appPackage", GenericLibrary.getConfigValue(sConfigPath, "appPackage"));
 	capabilities.setCapability("appActivity",GenericLibrary.getConfigValue(sConfigPath, "appActivity"));
 	capabilities.setCapability("noReset",true);
-	capabilities.setCapability("android.permission.WRITE_SECURE_SETTINGS",true);
+	//capabilities.setCapability("android.permission.WRITE_SECURE_SETTINGS",true);
 	capabilities.setCapability("newCommandTimeout", 50000);
 	capabilities.setCapability("uiautomator2ServerInstallTimeout", 60000);
 	capabilities.setCapability("autoGrantPermissions", true);

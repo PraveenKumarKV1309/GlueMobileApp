@@ -99,9 +99,9 @@ public static String sTestDataFile=BaseClass.sDirPath+"\\GlueWebAppExcelData.xls
 		
 	}
 	
-	public static void sleep(long sec) {
+	public static void sleep(long millisec) {
 		try {
-			Thread.sleep(sec);
+			Thread.sleep(millisec);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
