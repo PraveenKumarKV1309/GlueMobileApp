@@ -16,8 +16,9 @@ public class LoginTest extends BaseClass
 	                
 					driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 					GenericLibrary.sleep(9000);
-					System.out.println("check line execution");
-
+					//Below print is to debug the application
+					//System.out.println("check line execution");
+					System.out.println("check line execution.");
 	}
 	
 	
