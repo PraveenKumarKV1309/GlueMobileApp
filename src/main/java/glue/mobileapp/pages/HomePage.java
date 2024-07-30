@@ -1,143 +1,73 @@
 package glue.mobileapp.pages;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import glue.mobileapp.library.BaseClass;
+import glue.mobileapp.library.GenericLibrary;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
+public class HomePage {
 
-public class HomePage extends BaseClass
-{
+	
+
+	GenericLibrary generic;
 	AppiumDriver driver;
+	
 
 	public HomePage(AppiumDriver driver)
 	{
 	this.driver=driver;
 	PageFactory.initElements(new AppiumFieldDecorator(driver),this);
-	}
+	}					
+
 	
-	//----------------------------------------------------
-	//Add Project Button
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/rlAddProject")
-	private WebElement addProject;
 	
-	public WebElement getAddProject()
-	{
-		return addProject;
-	}
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id=\"Home\"]/android.view.ViewGroup")
+	private WebElement homeBtn;
 	
-	//-----------------------------------------------------
-	//Menu Button
-	@AndroidFindBy(className = "android.widget.ImageButton")
-	private WebElement MenuButton;
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id=\"Projects\"]/android.view.ViewGroup")
+	private WebElement projectsBtn;
 	
-	public WebElement getMenuButton()
-	{
-		return MenuButton;
-	}
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id=\"Mode\"]/android.view.ViewGroup")
+	private WebElement modeBtn;
 	
-	//------------------------------------------------------
-	//Notifications
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/iv_notification")
-	private WebElement NotificationButton;
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id=\"Peers\"]/android.view.ViewGroup")
+	private WebElement peersBtn;
 	
-	public WebElement getNotificationButton()
-	{
-		return NotificationButton;
-	}
-	
-	//-------------------------------------------------------
-	//All projects text for Home page verification
-	//@AndroidFindBy(xpath = "//android.widget.TextView[@text='All Projects']")
-	@FindBy(id = "com.hitachiabb.siteassist:id/tv_title")
-	private WebElement HomePageTitle;
-	
-	public WebElement getHomePageTitle()
-	{
-		return HomePageTitle;
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id=\"More\"]/android.view.ViewGroup")
+	private WebElement moreBtn;
+
+
+	public WebElement getHomeBtn() {
+		return homeBtn;
 	}
 
-	//--------------------------------------------------------
-	//You have No projects Text for the first time validation
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='You have no projects']")
-	private WebElement NoProjects;
-	
-	public WebElement getNoProjectsText()
-	{
-		return NoProjects;
+	public WebElement getProjectsBtn() {
+		return projectsBtn;
+	}
+
+	public WebElement getModeBtn() {
+		return modeBtn;
+	}
+
+	public WebElement getPeersBtn() {
+		return peersBtn;
+	}
+
+	public WebElement getMoreBtn() {
+		return moreBtn;
 	}
 	
-	//====================================================================
-	//Project card objects
-	//Project
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/iv_more")
-	private WebElement SeeMore;
 	
-	public WebElement getSeeMoreIcon()
-	{
-		return SeeMore;
+	
+	
+	
+	
+	
+	
+	
 	}
-	
-	//-------------------------------------------------------------------
-	//View details
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/tv_view_details")
-	private WebElement ViewDetails;
-	
-	public WebElement getViewDetails()
-	{
-		return ViewDetails;
-	}
-	
-	//--------------------------------------------------------------------
-	//Project name
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/tvProName")
-	private WebElement ProjectName;
-	
-	public WebElement getProjectName()
-	{
-		return ProjectName;
-	}
-	
-	//---------------------------------------------------------------------
-	//Factory name and unit number
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/tvFactoryName")
-	private WebElement UnitName;
-	
-	public WebElement getUnitName()
-	{
-		return UnitName;
-	}
-	
-	//----------------------------------------------------------------------
-	//Project status
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/tvProjectStatus")
-	private WebElement ProjectStatus;
-	
-	public WebElement getProjectStatus()
-	{
-		return ProjectStatus;
-	}
-	
-	//----------------------------------------------------------------------
-	//DiscrepancyNumber
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/tvDiscrepancy")
-	private WebElement DiscrepancyNumber;
-	
-	public WebElement getDiscrepancyNumber()
-	{
-		return DiscrepancyNumber;
-	}
-	
-	//----------------------------------------------------------------------
-	//DiscrepancyNumber
-	@AndroidFindBy(id = "com.hitachiabb.siteassist:id/tvLastUpdate")
-	private WebElement LastUpdateTime;
-		
-	public WebElement getLastUpdateTime()
-	{
-		return LastUpdateTime;
-	}
-}
+
+
